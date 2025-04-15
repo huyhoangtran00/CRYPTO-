@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cryptography and Signing</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="form-container">
+        <form id="input-form">
+          <div id="submit-buttons">
+            <button
+              type="submit"
+              class="button-86"
+              name="action"
+              value="encrypt"
+              id="function-btn"
+            >
+              Encrypt
+            </button>
+          </div>
+        </form>
+      </div>
+      <div id="display"></div>
+      <div class="dropdown">
+        <button class="dropbtn button-5" id="algorithm-selector">
+          Select Algorithm
+        </button>
+        <div class="dropdown-content" id="dropdown-content-algorithms"></div>
+      </div>
+    </div>
+
+    <div id="toggler">
+      <label class="toggle">
+        <input class="toggle-checkbox" type="checkbox" id="decrypt" />
+        <div class="toggle-switch"></div>
+        <!--<span class="toggle-label">Decrypt</span>-->
+      </label>
+      <div id="exporter">
+        <button type="button" class="button-86">Export</button>
+      </div>
+    </div>
+
+    <div class="overlay hidden"></div>
+    <div id="loading-spinner" class="spinner hidden"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
